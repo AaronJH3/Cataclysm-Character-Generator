@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cataclysm-Character-Generator by AaronJH3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Cataclysm-Character-Generator</h1>
+      <h2 class="project-tagline">Wanted to make it easier for users to create their own character templates for the game Cataclysm: Dark Days Ahead - This mod allows more functionality and customization within the game by using a GUI to make it easier for players to customer their characters within the game.</h2>
+      <a href="https://github.com/AaronJH3/Cataclysm-Character-Generator" class="btn">View on GitHub</a>
+      <a href="https://github.com/AaronJH3/Cataclysm-Character-Generator/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/AaronJH3/Cataclysm-Character-Generator/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h3>
+<a id="purpose" class="anchor" href="#purpose" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Purpose</h3>
+
+<p>"Cataclysm: Dark Days Ahead (DDA)" is a game that has developed a cult following - I found that the community didn't have an easy way of creating their characters and implementing them easily in the game. The code below is how it looks without my mods. But its key to understanding how I pulled the information from the code</p>
+
+<p><code>melee.json</code>
+{</p>
+
+<pre><code>    "type":"GENERIC",
+    "id" : "hammer_sledge",
+    "name" : "sledge hammer",
+    "description" : "A large, heavy hammer.  Makes a good melee weapon for the very strong, but is nearly useless in the hands of the weak.",
+    "weight" : 5443,
+    "to_hit" : 0,
+    "color" : "brown",
+    "symbol" : "/",
+    "material" : ["wood", "steel"],
+    "techniques" : ["BRUTAL", "WIDE"],
+    "volume" : 10,
+    "bashing" : 36,
+    "cutting" : 0,
+    "price" : 12000,
+    "qualities": [["HAMMER", 1]]
+},
+{
+    "type":"GENERIC",
+    "id" : "warhammer",
+    "name" : "war hammer",
+    "description" : "A medieval hammer made for battle.  Its odd shape and balance make it an excellent weapon, but an ineffective tool.",
+    "weight" : 1337,
+    "to_hit" : 1,
+    "color" : "brown",
+    "symbol" : "/",
+    "//": "Craftable from steel, shouldn't be silver. A warhammer is essentialy one end of a pickaxe with balancing weight on the other and crushes/pierces the armor.",
+    "material" : ["iron", "wood"],
+    "techniques" : ["BRUTAL"],
+    "flags" : ["DURABLE_MELEE", "SPEAR"],
+    "volume" : 5,
+    "bashing" : 15,
+    "cutting" : 15,
+    "price" : 16000,
+    "qualities": [["HAMMER", 1]]
+},
+</code></pre>
+
+<p>My application parses all of this data into a list that is easily legible to the human eye rather than having to deal with the issues of looking back and forth between raw files. Instead  GUI brings it all together to the front of the user to make it easy for them to pick and choose the traits and items the player wants their character to have upon creation.</p>
+
+<h3>
+<a id="expected-to-be-finished-before-august" class="anchor" href="#expected-to-be-finished-before-august" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Expected to be finished before August</h3>
+
+<p>You can see in my repository that I have been making quite a bit of progress since the beginning. As of right now I'm trying to make searching for the items a bit more intuitive but right now it looks like the following:</p>
+
+<p><img src="http://i1152.photobucket.com/albums/p497/codeimagedump/Screenshot%20from%202016-06-27%20231619_zps1entsxup.png" alt=""></p>
+
+<p>Its a personal project so I start working on it whenever I have the free time to do so.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Aaron Huerta (<a href="https://github.com/AaronJH3" class="user-mention">@AaronJH3</a>), and the Cataclysm Community that inspired this idea <a href="https://github.com/CleverRaven/Cataclysm-DDA">https://github.com/CleverRaven/Cataclysm-DDA</a></p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/AaronJH3/Cataclysm-Character-Generator">Cataclysm-Character-Generator</a> is maintained by <a href="https://github.com/AaronJH3">AaronJH3</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
